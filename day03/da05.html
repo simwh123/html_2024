@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <tilte></tilte>
+        <style>
+            table > tbody > tr> th{
+                color: red;
+            }
+            h4:hover{
+                color: red;
+            }
+            h4:active{
+                color:blue;
+            }
+            input:enabled{background-color: white;}
+            input:disabled{background-color: black;}
+
+            li{
+                list-style: none;
+                float: left;
+                padding: 15px;
+            }
+            li:nth-child(2n){background-color: #00ff00;}
+            li:nth-child(2n-1){background-color: red;}
+            li:first-child{border-radius: 10px 0 0 10px;}
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>이름</th>
+                <th>지역</th>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>부산 남구 용호동</td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <h4>반응 선택자</h4>
+        <br><br><br>
+
+        <h2>사용 가능</h2>
+        <input value="가능">
+        <h2>사용 불가능</h2>
+        <input disabled="disabled" value="불가능">
+        <br><br><br>
+
+        <ul>
+            <li>첫 번째</li>
+            <li>두 번째</li>
+            <li>세 번째</li>
+            <li>네 번째</li>
+            <li>다섯 번째</li>
+            <li>여섯 번째</li>
+            <li>일곱 번째</li>
+        </ul>
+
+    </body>
+</html>
+
+<!--
+    table 에서는 스타일 지정시 tbody가 맨앞에 와야한다
+    반응선택자: hover,active
+    상태선택자: 입력 양식의 상태를 선택할 떄
+    checked- 체크 상태
+    focus- 포커스를 맞춘
+    enabled- 사용가능한
+    disabled- 사용 불가능한
+
+    nth-child(수열) 형제관계에서 앞에서 수열번째 해당하는 태그 선택
+    first-child 형제관계에서 첫번째로 등장하는 태그 선택
+    last-child 형제관계에서 마지막으로 등장한느 태그 선택
+
+    list-style은 블릿마커를 제어한다
+    - 원형블릿마커(disc), 숫자순서(decimal), circle(비어있는 원블마) 사각블마(square)
+    border-radius 요소의 테두리를 만든다
+    (좌상, 우상, 우하, 좌하),(좌상우하, 우상좌하)
+
+-->
