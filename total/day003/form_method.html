@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>form_method</title>
+    </head>
+    <body>
+        <form action="#" method="post" accept-charset="utf-8">
+            <fieldset>
+            <legend> 개인 정보 입력 </legend>
+            이름 <input type="text" name="name"><br>
+            나이 <input type="test" name="age"><br>
+            <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<!--
+    action속성에는 폼데이터가 전달된 url를 명시한다.
+    action="http://210.119.14.85:8080/firn.jsp"
+    method속성에는 전송방식을 나타내준다.
+    get방식은 주소 url의 끝에 폼데이터를 실어 보낸다.(간단, 보안에 취약)
+    post방식은 몸체에 폼데이터를 실어 보낸다.(어렵고, 보안에 좋다.)
+-->

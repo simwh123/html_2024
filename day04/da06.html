@@ -1,0 +1,55 @@
+<!--
+
+    복습
+
+전체선택자:*
+태그선택자:태그
+ID선택자:#id
+클래스 선택자:.클래스
+속성 선택자:선택자[속성=값]
+자식 선택자
+
+구조선택자: 특정 위치에 있는 태그를 선택할 때 사용
+:nth-child(수열) 형제관계에서 앞에서 수열번째 해당하는 태그 선택
+:first-child 형제관계에서 첫번째로 등장하는 태그 선택
+:last-child 형제관계에서 마지막으로 등장하는 태그 선택
+
+list-style은 블릿마커를 제어한다
+
+-->
+
+<html>
+    <head>
+        <title></title>
+        <style>
+            li:first-child > a{color: red;};
+
+            p:nth-child(1)
+            p:nth-child(2) {font-size: 100%;}
+            p:nth-child(3) {font-size: 150%;}
+            p:nth-child(4) {font-size: 200%;}
+        </style>
+    </head>
+    <body>
+        <p>동해물과 백두산이 마르고 닳도록</p>
+        <p>동해물과 백두산이 마르고 닳도록</p>
+        <p>동해물과 백두산이 마르고 닳도록</p>
+        <p>동해물과 백두산이 마르고 닳도록</p>
+        <br><br><br>
+        <ul>
+            <li><a href ="#">주의사항</a></li>
+            <li><a href ="#">주의사항</a></li>
+            <li><a href ="#">주의사항</a></li>
+            <li><a href ="#">주의사항</a></li>
+            <li><a href ="#">주의사항</a></li>
+        </ul>
+            
+
+       
+    </body>
+
+</html>
+
+<!--
+    <p> 크기를 설정하지 않으면 16px
+-->

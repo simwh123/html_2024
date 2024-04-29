@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>box width height</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 80px;
+                background-color: red;
+                margin: 0 30px 0 30px;
+                border:2px;
+            }
+            #box1{
+                border-radius: 20px;
+            }
+            #box2{
+                width: 80px;
+                border-radius: 50px;
+            }
+            #box3{
+                border-radius: 20px 0 10px 50px;
+            }
+            #box4{
+                display: none;
+            }
+            #box5{
+                display: inline;
+                background-color: orange;
+                width: 200px;
+                height: 200px;
+            }
+            #box6{
+                display: inline-block;
+                background-color: orange;
+                width: 200px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="box"></div><br>
+            <div id="box1" class="box"></div><br>
+            <div id="box2" class="box"></div><br>
+            <div id="box3" class="box"></div>
+        </div>
+        <br><br>
+        <span>더미 객체</span>
+        <div id="box4">대상 객체</div>
+        <span>더미 객체</span><span>더미 객체</span>
+        <br><br>
+
+        <span>더미 객체</span>
+        <div>대상 객체</div>
+        <span>더미 객체</span><span>더미 객체</span>
+        <br><br>
+
+        <span>더미 객체</span>
+        <div id="box5">대상 객체</div>
+        <span>더미 객체</span>
+        <br><br>
+
+        
+        <span>더미 객체</span>
+        <div id="box6">대상 객체</div>
+        <span>더미 객체</span>
+
+    </body>
+</html>
+
+<!--
+    display: none 은 화면에 보이지 않고 공간도 차지하지 않는다.
+    visibility: hidden 은 화면에는 보이지 않고 공간은 차지한다.
+    div태그는 기본적으로 block을 기본 display로 채택하고 있다.
+    텍스트 영역을 넘어 행전체의 너비만큼 차지한다.
+    inline속성을 사용하면 <div>태그에 크기 조절이 불가능하다.
+    inline속성으로 지정된 엘리먼트는 전후에 줄바꿈이 없어 한줄에 나란히 배치된다. <a>,<span>
+    외부적으로는 inline속성을 가지지만
+    내부적으로는 block속성을 가진다.
+    
+-->

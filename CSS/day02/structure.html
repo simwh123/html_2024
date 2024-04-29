@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            li {
+                list-style:square;
+                float: left;
+                padding: 15px;
+            }
+            li:nth-child(2n) {background-color:blueviolet}
+            li:nth-child(2n+1) {background-color:cyan}
+            li:first-child{border-radius:10px 0 0 10px;}
+            li:last-child{border-radius: 0 10px 10px 0;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>첫 번째</li>
+            <li>두 번째</li>
+            <li>세 번째</li>
+            <li>네 번째</li>
+            <li>다섯 번째</li>
+        </ul>
+    </body>
+</html>
+
+<!--
+    구조선택자:특정 위치에 있는 태그를 선택할 때 사용
+    :nth-child(수열) 형제관계에서 앞에서 수열번째 해당하는 태그 선택
+    :first-child 형제관계에서 첫번째로 등장하는 태그 선택
+    :last-child 형제관계에서 마지막으로 등장하는 태그 선택  
+
+    list-style은 블릿마커를 제어한다.
+    - 원형블릿마커(disc), 숫자순서(decimal), circle(비어있는 원블마)
+      사각블마(square)
+      border-radius 요소의 테두리를 만든다.
+      (좌상, 우상, 우하, 좌하), (좌상우하, 우상좌하), (좌상, 우상좌하, 우하)
+-->
