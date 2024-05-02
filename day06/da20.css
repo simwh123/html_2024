@@ -1,0 +1,55 @@
+.container{
+    background: gray;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+.var2{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+.var1{
+    
+    border: 1px solid black;
+    overflow: hidden;
+}
+.var1:nth-child(2n){
+    background-color: aliceblue;
+}
+.var1:nth-child(2n-1){
+    background-color: pink;
+}
+.var1:nth-child(3n){
+    background-color: aqua;
+}
+
+/*
+    - display : grid 하면 그리드 박스를 사용하는데
+    부모 컨테이너를 grid 지정하면 자식은 grid cell이 된다.
+    grid 속성은
+    grid-template-columns
+    grid-template-rows
+    grid-template-areas
+
+    grid cell 속성은
+    grid-column-start
+    grid-column-end
+    grid-row-start
+    grid-row-end
+    grid-areas
+
+    grid-template-columns은 100px짜리 3개를 만든다.
+    grid-template-rows: 100px 200px 100px;
+    repeat키워드로 반복횟수를 설정
+    grid-template-columns:repeat(5, 20%)
+    grid-template-columns: repeat(5,1fr)
+    grid=auto-rows:각 컬럼의 아이템 크기가 다른경우 최소높이는 150px하고 자동으로
+
+    
+*/
