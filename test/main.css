@@ -1,0 +1,82 @@
+body{ background-color: rgb(191, 196, 164);}
+.var1{
+    width: 100%;
+    height: 100%;
+}
+.var2{
+    border: 1px solid rgb(65, 80, 63);
+    background-color: rgb(65, 80, 63);
+    color:aliceblue;
+    text-align: center;
+    line-height: 100px;
+}
+.var3{
+    
+    background-color: rgb(118, 139, 94);
+    color:aliceblue;
+    text-align: center;
+    line-height: 100px;
+}
+.var4{
+    float: left;
+    background-color: rgb(152, 170, 124);
+    width: 20%;
+    height: 60rem;
+}
+.var5{
+    float: right;
+    background-color: rgb(152, 170, 124);
+    width: 17%;
+    height: 60rem;
+}
+.var6{
+    width: 100%;
+    height: 60rem;
+}
+.var7{
+    width: 100%;
+    height: 100px;
+}
+.var8{
+    margin: 35px;
+    width: 250px;
+    height: 130px;
+    font-size: 50px;
+    font-family: fantasy;
+    color:darkseagreen;
+    background-color: rgb(191, 196, 164);
+    border: 0;
+    border-radius: 30px;
+    
+}
+.main2_var1{
+    width: 100%;
+    height: 50rem;
+    text-align: center;
+    margin-top: 25rem;
+}
+.mian2_var2{
+   height: 100px;
+}
+.main2_id{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-style: italic;
+    
+}
+.main2_pw{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-style: italic;
+}
+.main2_btn{
+    width: 300px;
+    height: 50px;
+    border: 0;
+    font-size: 30px;
+    border-radius: 30px;
+    color:darkseagreen;
+    background-color: rgb(65, 80, 63);
+}

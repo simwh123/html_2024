@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>현재 나이 구하기</h1>
+    <p>2024년 현재</p>
+    <script>
+        const input = prompt('태어난 년도를 입력하세요')
+        alert(input)  
+        document.write(input.concat('년에 태어난 사람의 나이는').concat(2024-input+'입니다'))
+
+    </script>
+</body>
+</html>
+
+<!--
+    **javaScript**
+    1.console.log : 콘솔창에 출력
+    2.document.write : 웹페이지에 출력, 태그도 가능
+    3.alert : 웹페이지에 메세지를 띄움
+    4.document.getElementByld().innerHTML
+
+    let: 지역변수
+    const: 상수
+    var: 함수 레벨 스코프
+    *변수 호이스팅: 선언전에 초기화나 함수 호출이 가능하다.
+    이는 변수 선언이 런타입이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
+-->

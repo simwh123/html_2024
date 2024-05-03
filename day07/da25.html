@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen {
+            body{background-color: bisque;}
+        }
+        @media print {
+            body{background-color: green;}
+        }
+        #menu{
+            width: 206px;
+            float: left;
+        }
+        @media screen and (max-width: 767px){
+            body{width: auto;}
+            #menu{width: auto; float: none;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="menu">
+            <li>메뉴 A</li>
+            <li>메뉴 B</li>
+            <li>메뉴 C</li>
+            <li>메뉴 D</li>
+        </ul>
+    </div>
+    <h1>hi</h1>
+    <p></p>
+</body>
+</html>
