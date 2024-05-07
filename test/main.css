@@ -2,6 +2,7 @@ body{ background-color: rgb(191, 196, 164);}
 .var1{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .var2{
     border: 1px solid rgb(65, 80, 63);
@@ -13,25 +14,28 @@ body{ background-color: rgb(191, 196, 164);}
 .var3{
     
     background-color: rgb(118, 139, 94);
-    color:aliceblue;
     text-align: center;
-    line-height: 100px;
+    width: 100%; 
+    height: 50px;
+    line-height: 50px;
+    background-color: aliceblue;
 }
 .var4{
     float: left;
     background-color: rgb(152, 170, 124);
     width: 20%;
-    height: 60rem;
+    height: 100rem;
 }
 .var5{
     float: right;
     background-color: rgb(152, 170, 124);
     width: 17%;
-    height: 60rem;
+    height: 100rem;
 }
 .var6{
     width: 100%;
     height: 60rem;
+    text-align: center;
 }
 .var7{
     width: 100%;
@@ -49,6 +53,35 @@ body{ background-color: rgb(191, 196, 164);}
     border-radius: 30px;
     
 }
+.var9{
+    display: inline-block;
+    text-align: center;
+   
+}
+.var9 img{
+    display: block;
+    max-width: 100%;
+}
+.var10{
+
+        font-size: 24px;
+        text-align: center;
+}
+
+.ul_var1{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+.li_var1{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+
+
 .main2_var1{
     width: 100%;
     height: 50rem;
