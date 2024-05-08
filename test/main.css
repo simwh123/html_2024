@@ -18,7 +18,7 @@ body{ background-color: rgb(191, 196, 164);}
     width: 100%; 
     height: 50px;
     line-height: 50px;
-    background-color: aliceblue;
+    
 }
 .var4{
     float: left;
@@ -53,20 +53,61 @@ body{ background-color: rgb(191, 196, 164);}
     border-radius: 30px;
     
 }
+.var4 img{
+    width: 100%;
+    height: 100rem;
+}
+.var11{
+    width: 40%;
+    height: 50px;
+    text-align: center;
+}
 .var9{
     display: inline-block;
-    text-align: center;
-   
+    position: relative;
+    
 }
 .var9 img{
-    display: block;
+    margin: 10px;
     max-width: 100%;
+    
+    
 }
 .var10{
-
-        font-size: 24px;
-        text-align: center;
+    font-size: 24px;
+    text-align: center;
 }
+.var12{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 90%;
+  word-wrap: break-word; /* 자동 줄 바꿈*/
+
+
+}
+.var13{
+    position: relative;
+    display: inline-block;
+}
+.var13:hover .var12{
+   
+    opacity: 1;
+}
+.var13:hover img{
+    filter: brightness(50%);
+}
+.var14{
+    position: absolute;
+    top: -150%;
+    left: 150%;
+}
+
 
 .ul_var1{
     padding: 0;
@@ -76,10 +117,13 @@ body{ background-color: rgb(191, 196, 164);}
 }
 .li_var1{
     padding: 0;
-    margin: 0;
+    margin: 5%;
     display: inline;
 }
-
+.li_var1 > a{
+    text-decoration-line: none;
+    color: aquamarine;
+}
 
 
 .main2_var1{

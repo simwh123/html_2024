@@ -64,3 +64,8 @@ console.log(Number('12345'));
 // document.wirte
 // alert()
 // innerHTML
+
+// 일치연산자
+let num = 10;
+let str = '10';
+if(num == str) console.log('같다');
