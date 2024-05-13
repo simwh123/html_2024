@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let solution = 55;
+
+        const handleGuessResult = (err) => {
+            document.getElementById('hint').innerHTML = '힌트: ' + err;
+        };
+
+        const guessNumber = (userInput, callback) => {
+            let num = parseInt(userInput);
+            let err = "";
+            if (isNaN(num)) {
+                err = "입력값이 숫자가 아닙니다.";
+            } else {
+                if (num > solution) {
+                    err = "입력한 숫자가 큽니다.";
+                } else if (num < solution) {
+                    err = "입력한 숫자가 작습니다.";
+                } else {
+                    err = "정답입니다!";
+                }
+            }
+            callback(err);
+        };
+
+        const btn1 = () => {
+            let userInput = document.getElementById('number').value;
+            guessNumber(userInput, handleGuessResult);
+        };
+    </script>
+    <h1>숫자 맞히기 게임</h1>
+    <p>1부터 100 사이의 숫자를 입력하세요.</p>
+    <input type="text" id="number" value="">
+    <button onclick="btn1()" type="button">숫자 추측</button>
+    <p id="hint"></p>
+</body>
+</html>

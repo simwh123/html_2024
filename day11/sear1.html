@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+        
+        table, th, td {
+          border: 1px solid black;
+          padding: 8px;
+          width: 700px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>자리배치도</h1>
+    <div id="var1"></div>
+    <script>
+        // 사용자에게 입장객 수와 한 줄에 몇 명씩 앉을지를 물어 입력을 받음
+        let memNum = prompt("입장객은 몇 명입니까?"); //10명
+        let colNum = prompt("한 줄에 몇 명씩 앉습니까?"); // 3명
+        // 행과 열의 수를 변수에 저장
+        const rows = memNum;
+        const cols = colNum;
+
+        // 테이블 생성 함수 호출
+        createTable(rows, cols);
+
+        function createTable(rows, cols) {
+            var table = "<table>"; // 테이블 시작 태그
+            var count = 1; // 순번 초기화
+            // 행 수만큼 반복
+            for (var i = 0; i < Math.ceil(rows / cols); i++) {
+                table += "<tr>"; // 행 시작 태그
+                // 한 줄에 열 수만큼 반복
+                for (var j = 0; j < cols; j++) {
+                    if (count <= rows) { // 순번이 입장객 수보다 작거나 같으면
+                        table += "<td> 좌석" + count + "</td>"; // 해당 순번을 셀에 삽입
+                    } else {
+                        table += "<td colspan='" + (cols - j) + "'></td>"; // 순번이 입장객 수를 초과하면 빈 칸 삽입
+                        break;
+                    }
+                    count++; // 순번 증가
+                }
+                table += "</tr>"; // 행 종료 태그
+            }
+            table += "</table>"; // 테이블 종료 태그
+            // 테이블을 화면에 출력
+            document.getElementById("var1").innerHTML = table;
+        }
+    </script>
+</body>
+</html>
