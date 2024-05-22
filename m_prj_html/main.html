@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: aqua;
+        }
+        header > div:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+        header > div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            background-color: bisque;
+        }
+        header > div:nth-child(1) > div > a{
+            text-decoration: none;
+            color: black;
+            font-size:small;
+        }
+        header >div > p{
+            width: 100%;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+            <img src="./img/logo.png" alt="이미지 확인" width="100px">
+            </div>
+            <p> 안녕하세요</p>
+            <div style="text-align: right; word-spacing: 10px; width: 100%; margin: 30px;">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+        <div>
+            <div style="text-align: center; width: 100%; word-spacing: 3vh;">
+                <a href="#">카테고리1</a>
+                <a href="#">카테고리2</a>
+                <a href="#">카테고리3</a>
+                <a href="#">카테고리4</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
